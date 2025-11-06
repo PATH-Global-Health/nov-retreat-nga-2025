@@ -1,0 +1,80 @@
+---
+title: "Technical Training: Quarto and Shiny Dashboarding"
+---
+
+::: callout-important
+To view the website in French - Open in Google Chrome - right click anywhere on the page and select "Translate to francias"
+
+Pour afficher le site Web en français - Ouvrez dans Google Chrome - faites un clic droit n'importe où sur la page et sélectionnez "*Traduire en français*"
+:::
+
+# Description
+
+Data visualization is a powerful tool for understanding and communicating data. This training session is a practical guide to master the main steps of dynamic dashboard development for the visualization of malaria epidemiological surveillance data with [R-Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/) and to write interactive documents using [Quarto](https://quarto.org/).
+
+Before starting the training session, it is important to have the following packages installed in your own R environment.
+
+We also need to ensure we have Quarto Installed: 👉[Follow the guide here](https://quarto.org/docs/get-started/)
+
+```{r eval = FALSE}
+# Packages installation ==========================================================================
+install.packages("shiny")     #"shiny: core package to build apps."
+install.packages("bslib")     #"theming (Bootstrap customization) and modern dashboard design elements."
+install.packages("tidyverse") #"Data wrangling (dplyr, ggplot2, readr…)."
+install.packages("DT")        #"DT: interactive tables."
+install.packages("plotly")    #"plotly: interactive plots."
+install.packages("leaflet")   #"leaflet: mapping spatial data."
+install.packages("sf")        #"sf: mapping spatial data."
+install.packages("lubridate") #"lubridate for dealting with date-time."
+install.packages("bsicons")   #"bsicons: Bootstrap icons for Shiny apps."
+install.packages("scales")    #"scales: for formatting numbers, dates, and other data types in a consistent way."
+
+# Packages load ===================================================================================
+
+library(shiny)
+library(bslib)
+library(tidyverse)
+library(DT)
+library(plotly)
+library(leaflet)
+library(sf)
+library(lubridate)
+library(bsicons)
+library(scales)
+
+```
+
+# Objectives
+
+## Shiny Dashboarding
+
+-   Understand key elements and structure of a Shiny dashboard (UI, Server, and reactive logic).
+
+-   Gain hands-on experience customizing dashboards using the bslib package.
+
+-   Build interactive plots, tables, and maps using packages like plotly, DT, and leaflet.
+
+-   Create your own Shiny dashboard to visualize malaria surveillance data.
+
+## Quarto
+
+-   Understand the purpose of Quarto and its role in reproducible reporting.
+
+-   Create and format interactive documents using Quarto markdown.
+
+-   Integrate code, plots, and tables in Quarto documents.
+
+-   Publish Quarto documents as webpages or reports for sharing with teams.
+
+-   Understand how Quarto and Shiny can be combined to build integrated, interactive reporting tools.
+
+The outcome of this session is a fully interactive local App displaying key malaria program metrics.
+
+# Materials
+
+|                  |                                                |
+|------------------|------------------------------------------------|
+| Shiny Slides     | Click [here](dashboarding-slides.qmd)          |
+| Shiny Worksheet  | Click [here](dashboard-workshop-materials.qmd) |
+| Quarto Slides    | Click here                                     |
+| Quarto Worksheet | Click here                                     |

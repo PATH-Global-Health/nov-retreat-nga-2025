@@ -1,0 +1,48 @@
+project:
+  type: website
+  resources:
+    - images/
+
+website:
+  title: "Tech Training Materials"
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Materials
+        menu:
+          - href: dashboarding-slides.qmd
+            text: Intro Shiny Slides
+          - href: dashboard-workshop-materials.qmd
+            text: Shiny Tutorial
+          - href: hand-out.qmd
+            text: Cheat sheet
+    right:
+      - href: https://github.com/PATH-Global-Health
+        icon: github
+      - href: "mailto:hayley@example.org"
+        icon: envelope
+      - href: "#"
+        text: "<img src='images/PATH_Logo_Color.png' height='60'>"
+
+  page-footer:
+    center: "Fellows Retreat 2025 | PATH "
+
+format:
+  html:
+    page-layout: full
+    theme:
+    - pulse
+    - styles.scss
+    toc: true
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 200px
+      gutter-width: 1.5rem
+
+editor: visual
+
+execute:
+  freeze: auto
